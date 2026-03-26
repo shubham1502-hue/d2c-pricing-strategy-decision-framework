@@ -126,17 +126,17 @@ Synthetic dataset generated using Python to simulate subscription behavior.
 ### Retention Curve
 Shows user retention trends over time across pricing strategies.
 
-![Retention Curve](./visuals/retention_curve.png)
+![Retention Curve](retention_curve.png)
 
 ### LTV Comparison
 Compares customer lifetime value across pricing strategies.
 
-![LTV Comparison](./visuals/ltv_comparision.png)
+![LTV Comparison](ltv_comparision.png)
 
 ### Revenue Comparison
 Highlights total revenue impact by pricing strategy.
 
-![Revenue Comparison](./visuals/revenue_comparison.png)
+![Revenue Comparison](revenue_comparison.png)
 
 ---
 
