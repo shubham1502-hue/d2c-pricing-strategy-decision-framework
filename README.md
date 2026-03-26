@@ -131,7 +131,7 @@ Shows user retention trends over time across pricing strategies.
 ### LTV Comparison
 Compares customer lifetime value across pricing strategies.
 
-![LTV Comparison](ltv_comparision.png)
+![LTV Comparison](ltv_comparison.png)
 
 ### Revenue Comparison
 Highlights total revenue impact by pricing strategy.
@@ -229,7 +229,7 @@ d2c-pricing-strategy-decision-framework/
 ├── visuals/
 │   ├── plots.py
 │   ├── retention_curve.png
-│   ├── ltv_comparision.png
+│   ├── ltv_comparison.png
 │   └── revenue_comparison.png
 │
 └── README.md
