@@ -1,5 +1,21 @@
 # Decision Framework for Pricing Strategy (D2C Subscription)
 
+## Problem This Solves
+
+D2C founders often debate pricing from intuition: lower price for growth, higher price for premium positioning. The actual problem is knowing which price point improves conversion, retention, LTV, CAC payback, and revenue at the same time.
+
+## How It Helps
+
+- Simulates subscription behavior across two price points and compares conversion, retention, revenue, LTV, ARPU, and CAC payback.
+- Turns a pricing debate into a forkable decision framework with charts and a clear recommendation.
+- Gives founders a starting model for validating price cuts, tiering, and pricing A/B tests before changing production pricing.
+
+## When To Fork This
+
+- Fork this if you run a D2C, subscription, fitness, wellness, creator, or consumer SaaS business and need a pricing decision model.
+- Fork it when your team is debating growth pricing vs premium positioning without cohort-level evidence.
+- Replace the synthetic assumptions with your own funnel, retention, CAC, ARPU, and cohort data.
+
 ## Executive Summary (1-Slide)
 
 - Decision: Reduce pricing from ₹999 → ₹699
@@ -227,10 +243,11 @@ d2c-pricing-strategy-decision-framework/
 │   └── unit_economics.py
 │
 ├── visuals/
-│   ├── plots.py
-│   ├── retention_curve.png
-│   ├── ltv_comparison.png
-│   └── revenue_comparison.png
+│   └── plots.py
+├── retention_curve.png
+├── ltv_comparison.png
+├── revenue_comparison.png
+├── pricing_strategy_summary.csv
 │
 └── README.md
 ```
@@ -238,10 +255,19 @@ d2c-pricing-strategy-decision-framework/
 ## How to Run
 
 1. Generate dataset:
-python data/generate_dataset.py
+
+```bash
+python3 data/generate_dataset.py
+```
 
 2. Run analysis:
-python analysis/unit_economics.py
+
+```bash
+python3 analysis/unit_economics.py
+```
 
 3. Generate visuals:
-python visuals/plots.py
+
+```bash
+python3 visuals/plots.py
+```

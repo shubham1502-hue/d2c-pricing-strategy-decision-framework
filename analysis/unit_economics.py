@@ -1,9 +1,11 @@
 import pandas as pd
+from pathlib import Path
 
 # ----------------------------
 # LOAD DATA
 # ----------------------------
-df = pd.read_csv(".../data/subscription_data.csv")
+ROOT = Path(__file__).resolve().parents[1]
+df = pd.read_csv(ROOT / "data" / "subscription_data.csv")
 
 print("\n Data Loaded")
 print(df.head())
@@ -139,3 +141,6 @@ summary = pd.DataFrame({
 
 print("\n🔥 FINAL SUMMARY:")
 print(summary)
+
+summary.to_csv(ROOT / "pricing_strategy_summary.csv")
+print("\nSummary exported: pricing_strategy_summary.csv")

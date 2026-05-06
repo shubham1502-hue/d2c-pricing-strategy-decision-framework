@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 # ----------------------------
 # CONFIG
 # ----------------------------
 NUM_USERS = 500
 MONTHS = list(range(1, 13))
+np.random.seed(42)
 
 PRICE_OPTIONS = [999, 699]
 
@@ -94,6 +96,7 @@ df = pd.DataFrame(data, columns=[
 # ----------------------------
 # SAVE FILE
 # ----------------------------
-df.to_csv(".../data/subscription_data.csv", index=False)
+output_path = Path(__file__).resolve().parent / "subscription_data.csv"
+df.to_csv(output_path, index=False)
 
-print("Dataset generated: subscription_data.csv")
+print(f"Dataset generated: {output_path}")

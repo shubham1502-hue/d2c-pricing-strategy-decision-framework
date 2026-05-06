@@ -1,8 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # Load data
-df = pd.read_csv("/Users/vegitto/Desktop/projects/d2c-pricing-strategy-decision-framework/data/subscription_data.csv")
+ROOT = Path(__file__).resolve().parents[1]
+df = pd.read_csv(ROOT / "data" / "subscription_data.csv")
 
 # ----------------------------
 # 1. RETENTION CURVE
@@ -21,7 +23,7 @@ plt.title("Retention Curve by Pricing")
 plt.xlabel("Month")
 plt.ylabel("Retention Rate")
 plt.legend()
-plt.savefig("retention_curve.png")
+plt.savefig(ROOT / "retention_curve.png")
 plt.clf()
 
 
@@ -34,7 +36,7 @@ ltv = df.groupby("price")["revenue"].sum() / df.groupby("price")["user_id"].nuni
 
 ltv.plot(kind="bar", title="LTV by Pricing")
 plt.ylabel("LTV")
-plt.savefig("ltv_comparison.png")
+plt.savefig(ROOT / "ltv_comparison.png")
 plt.clf()
 
 
@@ -45,7 +47,7 @@ revenue = df.groupby("price")["revenue"].sum()
 
 revenue.plot(kind="bar", title="Total Revenue by Pricing")
 plt.ylabel("Revenue")
-plt.savefig("revenue_comparison.png")
+plt.savefig(ROOT / "revenue_comparison.png")
 plt.clf()
 
-print("Charts generated in /visuals/")
+print("Charts generated: retention_curve.png, ltv_comparison.png, revenue_comparison.png")
