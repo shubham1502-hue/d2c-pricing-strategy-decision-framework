@@ -91,6 +91,15 @@ The default sample data and examples are synthetic, anonymized, or template-only
 - `ltv_comparison.png`: LTV visual
 - `revenue_comparison.png`: revenue visual
 
+## Sample outputs to inspect
+
+Open these before changing pricing assumptions:
+
+- `pricing_strategy_summary.csv`: the decision summary to inspect first.
+- `retention_curve.png`: retention comparison by price point.
+- `ltv_comparison.png`: LTV comparison by price point.
+- `revenue_comparison.png`: revenue comparison by price point.
+
 ## Example founder workflow
 
 - Monday: define pricing question.
