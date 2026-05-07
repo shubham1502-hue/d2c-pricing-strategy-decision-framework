@@ -29,18 +29,18 @@ CHANNELS = ["ads", "organic", "referral"]
 data = []
 
 for user_id in range(1, NUM_USERS + 1):
-    
+
     price = np.random.choice(PRICE_OPTIONS)
     channel = np.random.choice(CHANNELS)
-    
+
     active = False  # user subscription state
-    
+
     for month in MONTHS:
-        
+
         converted = 0
         churned = 0
         retained = 0
-        
+
         # ----------------------------
         # MONTH 1: CONVERSION
         # ----------------------------
@@ -50,23 +50,23 @@ for user_id in range(1, NUM_USERS + 1):
                 converted = 1
             else:
                 active = False
-        
+
         # ----------------------------
         # RETENTION LOGIC
         # ----------------------------
         if active:
             retained = 1
-            
+
             # Apply churn AFTER minimum survival period
             if month > 2:
                 if np.random.rand() < CHURN_RATES[price]:
                     churned = 1
                     active = False
-        
+
         else:
             retained = 0
             churned = 0
-        
+
         # ----------------------------
         # STORE ROW
         # ----------------------------

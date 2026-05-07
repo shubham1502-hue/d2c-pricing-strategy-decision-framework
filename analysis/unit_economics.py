@@ -53,7 +53,7 @@ active_users = (
     .reset_index()
 )
 
-print("\n👥 Active Users by Price & Month:")
+print("\n Active Users by Price & Month:")
 print(active_users)
 
 
@@ -139,7 +139,7 @@ summary = pd.DataFrame({
     "CAC Payback (Months)": payback_period
 })
 
-print("\n🔥 FINAL SUMMARY:")
+print("\n FINAL SUMMARY:")
 print(summary)
 
 summary.to_csv(ROOT / "pricing_strategy_summary.csv")
