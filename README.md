@@ -16,6 +16,21 @@ D2C founders often debate pricing from intuition: lower price for growth, higher
 - Fork it when your team is debating growth pricing vs premium positioning without cohort-level evidence.
 - Replace the synthetic assumptions with your own funnel, retention, CAC, ARPU, and cohort data.
 
+## Use This In Your Company
+
+- Use it as a pricing decision model for D2C, subscription, wellness, creator, or consumer SaaS products.
+- Keep the comparison logic: price point -> conversion -> retention -> LTV -> revenue -> CAC payback.
+- Replace synthetic assumptions with your funnel, cohort, price, and retention data.
+
+## Minimum Edits To Make It Yours
+
+- price points
+- conversion assumptions
+- retention/churn assumptions
+- CAC and revenue inputs
+
+The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+
 ## Executive Summary (1-Slide)
 
 - Decision: Reduce pricing from ₹999 → ₹699
