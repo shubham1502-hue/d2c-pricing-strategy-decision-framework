@@ -18,6 +18,8 @@ D2C founders often debate pricing from intuition: lower price for growth, higher
 
 ## Use This In Your Company
 
+This repo is designed to be forked into an internal company workflow. Fork it, replace the sample inputs with your company context, and keep only the parts that match your operating cadence. No permission request or sales call is needed before using it; the repo is the handoff. Check the license if you plan to redistribute your version.
+
 - Use it as a pricing decision model for D2C, subscription, wellness, creator, or consumer SaaS products.
 - Keep the comparison logic: price point -> conversion -> retention -> LTV -> revenue -> CAC payback.
 - Replace synthetic assumptions with your funnel, cohort, price, and retention data.
