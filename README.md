@@ -26,12 +26,16 @@ This repo is designed to be forked into an internal company workflow. Fork it, r
 
 ## Minimum Edits To Make It Yours
 
-- price points
-- conversion assumptions
-- retention/churn assumptions
-- CAC and revenue inputs
+Change these first:
 
-The fastest path is: fork the repo, replace the inputs above, run the demo or open the template, then adjust only the parts that reflect your company's workflow.
+| Edit | Where | Why |
+|---|---|---|
+| Replace subscription or order data. | `data/subscription_data.csv` | Makes LTV, retention, and pricing outputs reflect your actual customers. |
+| Update price points and plan names. | `analysis/unit_economics.py` | Aligns the scenarios with the packages your D2C brand can actually sell. |
+| Tune retention and churn assumptions. | `analysis/unit_economics.py` | Pricing decisions are sensitive to repeat purchase behavior. |
+| Regenerate charts and summary outputs. | `visuals/plots.py` and `pricing_strategy_summary.csv` | Keeps the executive view consistent with the edited assumptions. |
+
+You can leave the model structure, comparison charts, and unit-economics framing alone on the first fork. Change assumptions first; add new pricing mechanics only after the base scenarios make sense.
 
 ## Executive Summary (1-Slide)
 
