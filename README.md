@@ -168,8 +168,8 @@ D2C founders often debate pricing from intuition: lower price for growth, higher
 ## How It Helps
 
 - Simulates subscription behavior across two price points and compares conversion, retention, revenue, LTV, ARPU, and CAC payback.
-- Turns a pricing debate into a forkable decision framework with charts and a clear recommendation.
-- Gives founders a starting model for validating price cuts, tiering, and pricing A/B tests before changing production pricing.
+- Turns a pricing debate into a forkable decision framework with charts and a scenario readout.
+- Gives founders a starting model for validating price cuts, tiering, and pricing A/B tests before changing live pricing.
 
 ## When To Fork This
 
@@ -200,13 +200,13 @@ You can leave the model structure, comparison charts, and unit-economics framing
 
 ## Executive Summary (1-Slide)
 
-- Decision: Reduce pricing from ₹999 → ₹699
+- Scenario readout: under the synthetic assumptions in this model, ₹699 outperforms ₹999
 - Why:
  - Conversion increases materially at lower price
  - Retention improves slightly, indicating better product-market fit at this price point
  - LTV increases despite lower ARPU due to higher retention
- - Total revenue is maximized at ₹699
-- Impact:
+ - Modeled total revenue is highest at ₹699 in this scenario
+- Scenario implications:
  - Faster user acquisition
  - Stronger top-line growth
  - Improved unit economics (LTV > CAC, faster payback)
@@ -230,10 +230,10 @@ You can leave the model structure, comparison charts, and unit-economics framing
  - ₹699: ~₹362
  - ₹999: ~₹260
 
-- Revenue:
- - ₹699 outperforms ₹999 by ~40%+
+- Modeled Revenue:
+ - Under these synthetic assumptions, ₹699 outperforms ₹999 by ~40%+
 
-Conclusion: Lower pricing improves both growth and unit economics.
+Conclusion: In this synthetic scenario, lower pricing improves both growth and unit economics.
 
 ---
 
@@ -293,16 +293,16 @@ Synthetic dataset generated using Python to simulate subscription behavior.
 
 ## Key Insights
 
-1. Conversion improves significantly at lower pricing
+1. Conversion improves materially at lower pricing in the model
   Lower price reduces entry friction and increases paid user volume
 
-2. Retention is higher for lower-priced users
+2. Retention is higher for lower-priced users in the synthetic assumptions
   Users show slightly better stickiness at ₹699
 
-3. LTV increases despite lower pricing
+3. LTV increases despite lower pricing in the scenario
   Higher retention offsets the lower price point
 
-4. Revenue is maximized at ₹699
+4. Modeled revenue is highest at ₹699
   Increased volume drives higher total revenue
 
 ---
@@ -338,9 +338,9 @@ Highlights total revenue impact by pricing strategy.
 
 ---
 
-## Business Impact
+## Scenario Implications
 
-- Pricing optimization can increase revenue by ~40%+
+- In this synthetic scenario, the ₹699 case shows ~40%+ higher modeled revenue than ₹999.
 - Improved conversion reduces CAC payback period
 - Higher retention compounds long-term LTV growth
 
@@ -348,10 +348,12 @@ Highlights total revenue impact by pricing strategy.
 
 ## Recommendation
 
-The company should reduce pricing from ₹999 to ₹699.
+This is not a real-world pricing recommendation. Under the synthetic assumptions in this model, the ₹699 scenario performs best.
 
-This pricing strategy:
-- Maximizes revenue
+Any real pricing change would require cohort data, contribution-margin validation, and a controlled pricing test.
+
+This scenario:
+- Shows the highest modeled revenue
 - Improves customer acquisition
 - Enhances retention
 - Strengthens overall unit economics
@@ -400,7 +402,7 @@ This pricing strategy:
 
 Pricing is a critical growth lever.
 
-A reduction to ₹699 improves both growth and unit economics, making it the optimal strategy for scaling the business.
+Under this synthetic readout, a reduction to ₹699 improves both growth and unit economics. Treat it as a pricing decision framework, not validated pricing advice.
 
 ---
 
