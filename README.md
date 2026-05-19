@@ -4,6 +4,10 @@ Pricing decision framework for comparing subscription price points across conver
 
 <!-- FOUNDER_OS_STANDARD_README -->
 
+## Portfolio role
+
+This is a supporting pricing strategy repo. Use it for focused subscription price-point tradeoffs across conversion, retention, LTV, CAC payback, and revenue. The broader D2C growth operating-system proof lives in `dorje-teas-d2c-revenue-growth-os`.
+
 ## The founder problem
 
 D2C founders often debate pricing from intuition. The operating problem is knowing which price point improves conversion, retention, LTV, payback, and revenue without hiding the trade-offs.
@@ -332,7 +336,7 @@ Compares customer lifetime value across pricing strategies.
 ![LTV Comparison](ltv_comparison.png)
 
 ### Revenue Comparison
-Highlights total revenue impact by pricing strategy.
+Highlights modeled revenue differences by pricing strategy.
 
 ![Revenue Comparison](revenue_comparison.png)
 
